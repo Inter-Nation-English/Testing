@@ -1,0 +1,523 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.HeaderMainLine{
+    width: 99.4%;
+    height: 100px;
+    border: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+}
+.lineborder{
+    width: 700px;
+    height: 100px;
+    background: #ff0000;
+    margin-left: auto;
+    position: relative;
+    border-radius: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+    border: 1px;
+}
+.Sections a{
+    font-family: "Classic";
+    font-size: 23px;
+    transition: 0.4s;
+    color: #bac2c7;
+    border: 1px solid rgb(255, 0, 0);
+
+}
+.Sections a:hover{
+    border: 1px solid rgb(255, 140, 0);
+    border-radius: 10px 0 10px 0;
+}
+.decorativeAnim{
+    width: 200px;
+    height: 200px;
+    border: 1px;
+}
+
+.circleline{
+    width: 200px;
+    height: 200px;
+    animation-name: rotating;
+    animation-duration: 3s;
+    animation-iteration-count: 1000;
+}
+.circleline2{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -100px;
+    right: -50px;
+    transform: rotate(0deg);
+    animation-name: rotating;
+    animation-duration: 4s;
+    animation-iteration-count: 1000;
+
+}
+
+@keyframes rotating{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.decotiveElement{
+    width: 15px;
+    height: 400px;
+    background: #1f2f83;
+    border-radius: 10px 0px 10px 0px;
+}
+.decotiveElement2{
+    width: 15px;
+    height: 400px;
+    background: #1f2f83;
+    border-radius: 10px 0px 10px 0px;
+    transform: rotate(270deg);
+    position: relative;
+    top: 200px;
+    left: 160px;
+}
+.welcoming img{
+    height: 75px;
+    z-index: 1;
+    margin: 10px;
+}
+.MainLogo{
+    height: 100px;
+}
+.logo{
+    display: flex;
+}
+.hederbody{
+    width: 99.4%;
+    height: 800px;
+    border: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #bac2c7;
+    gap: 40px;
+}
+.MainPageLogo{
+    width: 1200px;
+    height: 550px;
+}
+.IntroText{
+    font-family: "Classic";
+    font-size: 40px;
+    width: 550px;
+    height: 300px;
+    border: 1px ;
+    content: "";
+    z-index: 10;
+    background: #babac7;
+    border-radius: 0px 50px 0px 50px;
+}
+.Outing{
+    font-size: 70px;
+}
+.welcoming{
+    animation-name: WelcomingAnim;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+}
+.changed{
+    animation-name: Appear;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+}
+@keyframes WelcomingAnim{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+}
+@keyframes Appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+.line{
+    width: 99.4%;
+    height: 1px;
+    background: #7c7676;
+}
+.InformationBody{
+    width: 99.6%;
+    height: 1200px;
+    background: rgb(2,0,36);
+    background:#bac2c7 ;
+}
+.Information{
+    display: flex;
+    justify-content: center;
+}
+.Information p{
+    font-family: "Classic";
+    font-size: 40px;
+    position: relative;
+    top: 100px;
+}
+.outsourcingInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px;
+    height: 600px;
+}
+.card{
+    width: 650px;
+    height: 380px;
+    border-radius: 10px;
+    border: 1px ;
+    position: relative;
+    top: 150px;
+    background:#bac2c7 ;
+    box-shadow: 1px 1px 20px 1px #939596;
+}
+.card p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 20px;
+}
+.outStuffinginfo{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px ;
+    justify-content: space-between;
+    height: 600px;
+}
+.StuffingInfo{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+.Descript {
+    font-family: "Classic";
+    font-size: 20px;
+    width: 640px;
+    border: 1px;
+    margin: 20px;
+    line-height: 28px;
+}
+.InformateStufing{
+    position: relative;
+    bottom: 100px;
+    font-size: 50px;
+    font-family: "Classic";
+}
+.cardForStuffing{
+    width: 650px;
+    height: 380px;
+    border-radius: 10px;
+    border: 1px ;
+    position: relative;
+    top: 100px;
+    background:#bac2c7 ;
+    box-shadow: 1px 1px 20px 1px #939596;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.cardForStuffing p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 20px;
+}
+
+.aboutUsBody{
+    width: 99.4%;
+    height: 1000px;
+    border: 1px solid rebeccapurple;
+    background: #bac2c7;
+}
+.mainInfoCard{
+    width: 950px;
+    height: 580px;
+    border-radius: 10px;
+    border: 1px ;
+    position: relative;
+    top: 150px;
+    background:#bac2c7 ;
+    box-shadow: 1px 1px 20px 1px #939596;
+    position: relative;
+    left: 100px;
+}
+.infoBox{
+    width: 600px;
+    height: 700px;
+    border: 1px ;
+    position: absolute;
+    top: 0;
+    top: 1000px;
+    right: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.linesWithInfo{
+    width: 600px;
+    height: 3px;
+    background: #b3a0a0;
+}
+.conclution{
+    height: 300px;
+    background:#6f7b81;
+    width: 99.5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.linkers{
+    display: flex;
+    gap: 20px;
+}
+.links{
+    width: 60px;
+    height: 60px;
+    border-radius: 90px;
+    border: 1px ;
+    transition: 0.4s;
+    filter:opacity(0.4);
+    position: relative;
+    top: 0;
+    z-index: 3;
+}
+.links:hover{
+    filter:opacity(1);
+    width: 75px;
+    height: 75px;
+}
+.links img{
+    width: 60px;
+    height: 60px;
+}
+.mainInfoCard p{
+    font-size: 50px;
+    font-family: "Classic";
+    margin: 20px;
+}
+.mainInfoCard h3{
+    font-family: "Classic";
+    width: 700px;
+    margin: 20px;
+    font-size: 20px;
+}
+.infoBox p{
+    font-size: 50px;
+    font-family: "Classic";
+
+}
+.BenefitIs{
+    font-family: "Classic";
+    font-size: 28px !important;
+}
+.MarkIcon{
+    width: 50px;
+    height: 50px;
+}
+.logoB{
+    max-width: 300px;
+    min-width: 100px;
+    min-height: 100px;
+    max-height: 200px;
+    border: 1px ;
+}
+.logoB p{
+    font-family: "Classic";
+    width: 300px;
+    font-size: 19px;
+}
+.logoB img{
+    width: 50px;
+    height: 50px;
+}
+.logoB span{
+    font-size: 30px;
+}
+.locationinfo{
+    width: 500px;
+    height: 50px;
+    border: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.locationinfo img{
+    width: 30px;
+    height: 30px;
+}
+.discription{
+    font-family: "Classic";
+}
+.contactinfo{
+    width: 300px;
+    height: 50px;
+    border: 1px solid red;
+    font-size: 20px;
+    position: relative;
+}
+.mainbodycard{
+    height: 1100px;
+    width: 90%;
+    border: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    left: 100px;
+    border: 1px solid red;
+    gap: 10px;
+}
+.mainCardHolder{
+    width: 700px;
+    height: 370px;
+    background:#bac2c7 ;
+    box-shadow: 1px 1px 20px 1px #939596;
+    position: relative;
+    top: 160px;
+    border-radius: 30px 0 30px 0;
+    display: flex;
+    align-items: center;
+}
+@font-face {
+    font-family: "Classic";
+    src: url("Quicksand-VariableFont_wght.ttf");
+}
+
+@media (max-width : 500px){
+    .MainLogo{
+        width: 130px;
+        height: 100px;
+        margin: 15px;
+    }
+    .welcoming{
+        display: none;
+    }
+    .lineborder{
+        width: 250px;
+    }
+    .Sections a{
+        font-size: 15px;
+    }
+
+    .MainPageLogo{
+        width: 550px;
+        height: 250px;
+    }
+    .hederbody{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .circleline{
+        width: 100px;
+        height: 100px;
+    }
+    .circleline2{
+        width: 100px;
+        height: 100px;
+    }
+    .decotiveElement{
+        display: none;
+    }
+    .decotiveElement2{
+        display: none;
+    }
+    .IntroText{
+        width: 350px;
+        height: 200px;
+    }
+    .Outing{
+        font-size: 30px;
+    }
+    .decorativeAnim{
+        position: relative;
+        top: 150px;
+        max-height: 200px;
+        right: 50px;
+    }
+    .mainInfoCard{
+        width: 390px;
+        left: 10px;
+        top: 10px;
+        height: 500px;
+    }
+    .mainInfoCard h3{
+        width: 350px;
+        margin: 10px;
+        font-size: 16px
+    }
+    .infoBox{
+        width: 400px;
+        height: 800px;
+        top: 1370px;
+        left: 0px;
+    }
+    .infoBox p{
+        font-size: 30px;
+    }
+    .aboutUsBody{
+        height: 1300px;
+    }
+    .Benefits{
+        position: relative;
+        top: 100px;
+        font-size: 20px;
+        height: 100px;
+        margin: 10px;
+
+    }
+    .BenefitIs{
+        margin: 10px;
+    }
+    .MarkIcon{
+        margin: 10px;
+    }
+    .mainbodycard{
+        left: 10px;
+    }
+    .mainCardHolder{
+        width: 350px;
+        height: 500px;
+    }
+    .Descript{
+        font-size: 16 !important;
+        width: 300px;
+        line-height: 18px;
+    }
+    .InformationBody{
+        height: 2300px;
+    }
+}
+@media (max-width : 400px){
+    .mainInfoCard{
+        width: 94%;
+    }
+}
